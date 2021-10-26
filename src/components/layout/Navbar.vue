@@ -72,7 +72,7 @@ export default {
 
   methods: {
     onSearch() {
-      return (window.location.href = `/search?tags=?${this.searchStr}`);
+      return (window.location.href = `/search?tags=${this.searchStr}`);
     },
   },
 };
