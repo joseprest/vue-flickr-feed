@@ -12,7 +12,7 @@ Vue.config.productionTip = false;
 Vue.prototype.$getBetweenBy = getBetweenBy;
 
 const router = new VueRouter({
-  mode: "hash",
+  mode: "history",
   base: "/",
   fallback: true,
   routes,
