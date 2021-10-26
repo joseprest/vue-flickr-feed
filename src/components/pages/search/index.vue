@@ -47,7 +47,7 @@ export default {
     let tags = this.$route.query.tags;
     this.tags = tags;
     console.log("Tags Arr :=> ", tags);
-    getPhotos(tags || "").then((rsp) => {
+    getPhotos(tags).then((rsp) => {
       console.log(rsp);
       this.images = { ...rsp.items };
     });
